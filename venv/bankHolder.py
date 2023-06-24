@@ -35,7 +35,6 @@ class Bankholder:
         self.get_acc_list().append(bankholder)
 
     def __repr__(self):
-        return "Account name: " + self.get_name() + "\n ID: " + str(self.get_ID()) + "\n Balance: " + str(self.get_balance() + "$")
-
+        return str(self)
     def __str__(self):
         return "Account name: " + self.get_name() + "\n ID: " + str(self.get_ID()) + "\n Balance: " + str(self.get_balance() + "$")
